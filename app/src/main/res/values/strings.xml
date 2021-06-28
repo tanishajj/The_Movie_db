@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The Movie db</string>
+
+    <string name="string_popular">Popular Movies</string>
+    <string name="string_playing">Now Playing</string>
+    <string name="string_top">Top Rated</string>
+    <string name="string_upcoming">Upcoming</string>
+</resources>
