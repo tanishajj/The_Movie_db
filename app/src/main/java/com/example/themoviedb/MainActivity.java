@@ -163,46 +163,50 @@ public class MainActivity extends AppCompatActivity implements OnRecyclerViewIte
                     webActivity.putExtra("date",movieModelPopular.getRelease_date());
                     webActivity.putExtra("average",movieModelPopular.getVote_average());
                     webActivity.putExtra("overview",movieModelPopular.getOverview());
+                    webActivity.putExtra("language",movieModelPopular.getOriginal_language());
                     webActivity.putExtra("path",Credentials.MOVIE_BASE_URL + movieModelPopular.getPoster_path());
                     startActivity(webActivity);
                 }
                 break;
-//            case R.id.layout_playing:
-//                MovieModel movieModelPlaying = (MovieModel) v.getTag();
-//                if(!TextUtils.isEmpty(movieModelPlaying.getTitle())) {
-//                    Intent webActivity = new Intent(this,MovieDetailsActivity.class);
-//                    webActivity.putExtra("title1",movieModelPlaying.getTitle());
-//                    webActivity.putExtra("date1",movieModelPlaying.getRelease_date());
-//                    webActivity.putExtra("average1",movieModelPlaying.getVote_average());
-//                    webActivity.putExtra("overview1",movieModelPlaying.getOverview());
-//                    webActivity.putExtra("path1",Credentials.MOVIE_BASE_URL + movieModelPlaying.getPoster_path());
-//                    startActivity(webActivity);
-//                }
-//                break;
-//            case R.id.layout_top:
-//                MovieModel movieModelTop = (MovieModel) v.getTag();
-//                if(!TextUtils.isEmpty(movieModelTop.getTitle())) {
-//                    Intent webActivity = new Intent(this,MovieDetailsActivity.class);
-//                    webActivity.putExtra("title2",movieModelTop.getTitle());
-//                    webActivity.putExtra("date2",movieModelTop.getRelease_date());
-//                    webActivity.putExtra("average2",movieModelTop.getVote_average());
-//                    webActivity.putExtra("overview2",movieModelTop.getOverview());
-//                    webActivity.putExtra("path2",Credentials.MOVIE_BASE_URL + movieModelTop.getPoster_path());
-//                    startActivity(webActivity);
-//                }
-//                break;
-//            case R.id.layout_upcoming:
-//                MovieModel movieModelUpcoming = (MovieModel) v.getTag();
-//                if(!TextUtils.isEmpty(movieModelUpcoming.getTitle())) {
-//                    Intent webActivity = new Intent(this,MovieDetailsActivity.class);
-//                    webActivity.putExtra("title3",movieModelUpcoming.getTitle());
-//                    webActivity.putExtra("date3",movieModelUpcoming.getRelease_date());
-//                    webActivity.putExtra("average3",movieModelUpcoming.getVote_average());
-//                    webActivity.putExtra("overview3",movieModelUpcoming.getOverview());
-//                    webActivity.putExtra("path3",Credentials.MOVIE_BASE_URL + movieModelUpcoming.getPoster_path());
-//                    startActivity(webActivity);
-//                }
-//                break;
+            case R.id.layout_playing:
+                MovieModel movieModelPlaying = (MovieModel) v.getTag();
+                if(!TextUtils.isEmpty(movieModelPlaying.getTitle())) {
+                    Intent webActivity = new Intent(this,MovieDetailsActivity.class);
+                    webActivity.putExtra("title1",movieModelPlaying.getTitle());
+                    webActivity.putExtra("date1",movieModelPlaying.getRelease_date());
+                    webActivity.putExtra("average1",movieModelPlaying.getVote_average());
+                    webActivity.putExtra("overview1",movieModelPlaying.getOverview());
+                    webActivity.putExtra("language1",movieModelPlaying.getOriginal_language());
+                    webActivity.putExtra("path1",Credentials.MOVIE_BASE_URL + movieModelPlaying.getPoster_path());
+                    startActivity(webActivity);
+                }
+                break;
+            case R.id.layout_top:
+                MovieModel movieModelTop = (MovieModel) v.getTag();
+                if(!TextUtils.isEmpty(movieModelTop.getTitle())) {
+                    Intent webActivity = new Intent(this,MovieDetailsActivity.class);
+                    webActivity.putExtra("title2",movieModelTop.getTitle());
+                    webActivity.putExtra("date2",movieModelTop.getRelease_date());
+                    webActivity.putExtra("average2",movieModelTop.getVote_average());
+                    webActivity.putExtra("overview2",movieModelTop.getOverview());
+                    webActivity.putExtra("language2",movieModelTop.getOriginal_language());
+                    webActivity.putExtra("path2",Credentials.MOVIE_BASE_URL + movieModelTop.getPoster_path());
+                    startActivity(webActivity);
+                }
+                break;
+            case R.id.layout_upcoming:
+                MovieModel movieModelUpcoming = (MovieModel) v.getTag();
+                if(!TextUtils.isEmpty(movieModelUpcoming.getTitle())) {
+                    Intent webActivity = new Intent(this,MovieDetailsActivity.class);
+                    webActivity.putExtra("title3",movieModelUpcoming.getTitle());
+                    webActivity.putExtra("date3",movieModelUpcoming.getRelease_date());
+                    webActivity.putExtra("average3",movieModelUpcoming.getVote_average());
+                    webActivity.putExtra("overview3",movieModelUpcoming.getOverview());
+                    webActivity.putExtra("language3",movieModelUpcoming.getOriginal_language());
+                    webActivity.putExtra("path3",Credentials.MOVIE_BASE_URL + movieModelUpcoming.getPoster_path());
+                    startActivity(webActivity);
+                }
+                break;
         }
     }
 }
